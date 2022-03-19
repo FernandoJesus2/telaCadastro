@@ -1,0 +1,145 @@
+*{box-sizing: border-box;}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(211, 211, 216);
+}
+
+
+header h1{
+    margin: 0;
+    padding: 10px 0;
+    min-width: 1070px;
+    display: flex;
+    background-color: rgb(211, 211, 216);
+    justify-content: center;
+    font-size: 50px;
+}
+.main{
+    min-width: 1070px;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(211, 211, 216);
+}
+
+.main .subtitulo{
+    text-align: justify;
+    width: 800px;
+    border-top: 1px solid rgb(144, 196, 247);;
+    border-right: 1px solid rgb(144, 196, 247);;
+    border-left: 1px solid rgb(144, 196, 247);;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(144, 196, 247);
+}
+
+.main .subtitulo h2{
+    font-size: 25px;
+    margin: 0;
+    padding: 10px;
+}
+
+.main .container{
+    display: flex;
+    width: 800px;
+    padding: 10px;
+    border: 1px solid rgb(144, 196, 247);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: aliceblue;
+}
+
+.main .container form{
+    width: 100%;
+}
+
+.main .container form .nome input{
+    width: 100%;
+}
+
+
+/*------Loucura que fiz para ajustar um select que não estava do mesmo tamanho que o input. Na verdade ate conseguia ajustar, mas o radio ficava desalinhado------*/
+.cpf_data_estado-civil_sexo_principal{
+    display: flex;
+}
+
+.main .container form .cpf_data_estado{
+    display: flex;
+    flex: 2;
+}
+
+.main .container form .cpf_data_estado input,
+.main .container form .cpf_data_estado select{
+    height: 30px;
+    width: 150px;
+    margin-right: 15px;
+}
+
+.main .container form .sexo{
+    display: flex;
+    flex: 1;
+}
+
+.main .container form .sexo input{
+    width: 15px;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.main .container form .endereco{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .container form .endereco input,
+.main .container form .endereco select{
+    width: 150px;
+    margin-right: 30px;
+}
+
+.main .container form .endereco p{
+    font-size: 25px;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+
+.main .container form .login{
+ display: flex;
+ flex-direction: column;
+}
+
+.main .container form input{
+    margin-bottom: 10px;
+}
+
+input, select{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.nome,
+.cpf_data_estado,
+.endereco,
+.login{
+    margin-bottom: 10px;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    font-size: 20px;
+    background-color: rgb(144, 196, 247);
+}
+
+.rodape footer p{
+    text-align: center;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de cadastro</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo.css"/>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <section class="cabecalho">
+        <header>
+            <h1>Cadastro</h1>
+        </header>
+    </section>
+
+    <section class="main">
+
+        <div class="subtitulo">
+            <h2>Preencha com suas informações pessoais</h2>
+        </div>
+
+        <div class="container">
+            <form>
+               
+                <div class="nome">
+                    <label>
+                        Nome completo:<br/>
+                        <input type="text" name="nome" maxlength="100" placeholder="Nome completo"/>
+                    </label>
+                </div>
+
+                <div class="cpf_data_estado-civil_sexo_principal">
+                        <div class="cpf_data_estado">
+                            <label>
+                                CPF:<br/>
+                                <input type="number" name="cpf" placeholder="000.000.000-00"/>
+                            </label>
+
+                            <label>
+                                Data de nascimento: <br/>
+                                <input type="date" name="nascimento" />
+                            </label>
+
+                            <label> 
+                                Estado Civil: <br/>
+                                <select name="estadocivil"><option></option>
+                                        <option value="solteiro">Solteiro</option>
+                                        <option value="casado">Casado</option>
+                                        <option value="viuvo">Viuvo</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="sexo">
+                            <label>
+                                Sexo: <br/>
+                                <input type="radio" name="sexo" value="mas"/> Masculino
+                                <input type="radio" name="sexo" value="fem"/> Feminino
+                                <input type="radio" name="sexo" value="na"/>N/A
+                            </label>
+                        </div>
+                </div>
+
+                <div class="endereco">
+                    <p>Endereço</p> 
+
+                    <label>
+                        CEP: <br/>
+                        <input type="number" name="cep" placeholder="00000-000"/>
+                    </label>
+
+                    <label>
+                        Rua: <br/>
+                        <input type="text" name="endereco" placeholder="Rua"/>
+                    </label>
+
+                    <label>
+                        Número: <br/>
+                        <input type="number" name="numero" placeholder="Nº"/>
+                    </label>
+
+                    <label>
+                        Complemento:<br/>
+                        <input type="text" name="compl"/>
+                    </label>
+
+                    <label>
+                        Estado: <br/>
+                        <select name="estado">   
+                        <option value="none" selected></option>
+                        <option value="acre">Acre - AC</option>
+                        <option value="alagoas">Alagoas - AL</option>
+                        <option value="amapa">Amapá - AP</option>
+                        <option value="amazonas">Amazonas - AM</option>
+                        <option value="bahia">Bahia - BA</option>
+                        <option value="ceara">Ceará - CE</option>
+                        <option value="distritofederal">Distrito Federal - DF</option>
+                        <option value="espiritosanto">Espírito Santo - ES</option>
+                        <option value="goias">Goiás - GO</option>
+                        <option value="maranhao">Maranhão - MA</option>
+                        <option value="matogrosso">Mato Grosso - MT</option>
+                        <option value="matogrossodosul">Mato Grosso do Sul - MS</option>
+                        <option value="minasgerais">Minas Gerais - MG</option>
+                        <option value="para">Pará - PA</option>
+                        <option value="paraiba">Paraíba - PB</option>
+                        <option value="parana">Paraná - PR</option>
+                        <option value="pernambuco">Pernambuco - PE</option>
+                        <option value="piaui">Piauí - PI</option>
+                        <option value="riodejaneiro">Rio de Janeiro - RJ</option>
+                        <option value="riograndedonorte">Rio Grade do Norte - RN</option>
+                        <option value="riograndedosul">Rio Grande do Sul - RS</option>
+                        <option value="rondonia">Rondônia - RO</option>
+                        <option value="roraima">Roraima - RR</option>
+                        <option value="santacatarina">Santa Catarina - SC</option>
+                        <option value="saopaulo">São Paulo - SP</option>
+                        <option value="sergipe">Sergipe - SE</option>
+                        <option value="tocantins">Tocantins - TO</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Cidade: <br/>
+                        <input type="text" name="cidade"/>
+                    </label>
+                    
+                </div>
+
+                <div class="login">
+                    <label>
+                        E-mail: <br/>
+                        <input type="email" name="email" placeholder="email@email.com"/>
+                    </label>
+
+                    <label>
+                        Senha: <br/>
+                        <input type="password" name="senha" placeholder="*******"/>
+                    </label>
+
+                    <label>
+                        Confirmar senha:<br/>
+                        <input type="password" name="senha" placeholder="*******"/>
+                    </label>
+                </div>
+                
+                <section class="botao">
+                    <button>Cadastrar</button>
+                </section>
+                
+                
+            </form>
+        </div>
+
+        <section class="rodape">
+        <footer>
+            <p>Todos os direitos reservados<br/>
+                Por: Fernando Jesus
+            </p>
+        </footer>
+        </section>
+
+    </section>
+
+   
+</body>
+</html>
